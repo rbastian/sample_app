@@ -8,10 +8,8 @@
 #  created_at      :datetime        not null
 #  updated_at      :datetime        not null
 #  password_digest :string(255)
-#
-# Indexes
-#
-#  index_users_on_email  (email) UNIQUE
+#  remember_token  :string(255)
+#  admin           :boolean         default(FALSE)
 #
 
 class User < ActiveRecord::Base
