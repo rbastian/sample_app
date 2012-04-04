@@ -18,6 +18,7 @@ group :development do
 end
 
 group :test do
+  gem 'pg', '0.12.2'
   gem 'rspec-rails', '2.8.1'
   gem 'capybara', '1.1.2'
   # System-dependent gems
@@ -25,9 +26,7 @@ group :test do
   gem 'growl', '1.0.3'
   gem 'guard-spork', '0.3.2'
   gem 'spork', '0.9.0'
-  gem 'sqlite3', '1.3.5'
   gem 'factory_girl_rails', '1.4.0'
-  gem 'cucumber-rails', '1.2.1'
   gem 'database_cleaner', '0.7.0'
   gem 'simplecov', '0.6.0'
 end
