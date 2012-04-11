@@ -25,10 +25,13 @@ test: &test
   password: sampleapp
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: sampleapp
   pool: 5
   timeout: 5000
+  username: sampleapp
+  password: sampleapp
 
 cucumber:
   <<: *test
