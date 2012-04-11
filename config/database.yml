@@ -28,6 +28,8 @@ production:
   adapter: postgresql
   encoding: unicode
   database: sampleapp
+  host: ec2-75-101-244-26.compute-1.amazonaws.com 
+  port: 5432
   pool: 5
   timeout: 5000
   username: sampleapp
